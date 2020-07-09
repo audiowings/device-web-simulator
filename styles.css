@@ -1,0 +1,254 @@
+
+body {
+  font-family: sans-serif;
+  background: #232323;
+  color: #aaa;
+}
+
+#main {
+  margin: auto;
+  width: 310px;
+  padding: 10px;
+  align-content: center;
+}
+
+div#logo {
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+#ui {
+  display: block;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+
+}
+
+/* Style buttons */
+.btn {
+    position: relative;
+    background-color: #232323; 
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+
+#dialog-overlay {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: left .350s ease-in-out;
+}
+
+#dialog-prompt {
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#dialog-prompt-header {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.dialog-button-panel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 8px 8px 8px;
+}
+
+#dialog-confirm button {
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  padding: 2px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+
+#dialog-confirm button:hover {
+  background-color: #ddd;
+}
+
+#confirmBox .message {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  font-size: .475em;
+}
+#playlist {
+  color: #eee;
+}
+
+
+
+#device-info {
+  display: block;
+  font-size: .475em;
+}
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+  background-color:transparent;
+  border:none;
+  color:#afa;
+  padding:20px 20px 20px 13px;
+  width:100%;
+  }
+  
+  .plyr--audio .plyr__controls button.tab-focus:focus,
+  .plyr--audio .plyr__controls button:hover,
+  .plyr__play-large {
+  background:rgba(0,0,0,.1);
+  }
+  
+  .plyr__progress--played, .plyr__volume--display {
+  color:rgba(0,0,0,.1);
+  }
+  
+  .plyr--audio .plyr__progress--buffer,
+  .plyr--audio .plyr__volume--display {
+  background:rgba(0,0,0,.1);
+  }
+  
+  .plyr--audio .plyr__progress--buffer {
+  color:rgba(0,0,0,.1);
+  }
+
+  /* Longpress animation
+================================================== */
+
+  .longpress {
+    -webkit-animation: 1s longpress;
+            animation: 1s longpress;
+}
+
+@-webkit-keyframes longpress {
+    0%, 20% { background: RoyalBlue; }
+    100% { background: yellow; }
+}
+
+@keyframes longpress {
+    0%, 20% { background: RoyalBlue; }
+    100% { background: yellow; }
+}
+
+/* Connect Switch 
+==================================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  bottom: 4px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Tooltips 
+==================================*/
+
+
+#ui .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+#ui > *:hover .tooltiptext {
+  visibility: visible;
+}

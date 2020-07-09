@@ -1,0 +1,99 @@
+{
+    "playlistId": 1,
+    "playlistName": "Demo Hip Hop",
+    "providerId": 0,
+    "items": [
+        {
+            "item": {
+                "providerId": 0,
+                "path": "./audio-files/demo/big daddy kane - warm it up, kane.mp3",
+                "id": null,
+                "title": "Warm It Up Kane",
+                "bpm": null,
+                "duration": null,
+                "replayGain": null,
+                "peak": null,
+                "allowStreaming": null,
+                "streamReady": null,
+                "streamStartDate": null,
+                "premiumStreamingOnly": null,
+                "trackNumber": null,
+                "volumeNumber": null,
+                "version": null,
+                "popularity": null,
+                "copyright": null,
+                "description": null,
+                "url": null,
+                "isrc": null,
+                "editable": null,
+                "explicit": null,
+                "audioQuality": null,
+                "artist": {
+                    "id": null,
+                    "name": "Big Daddy Kane",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": null,
+                        "name": "Big Daddy Kane",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": null,
+                    "title": null,
+                    "cover": null
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "providerId": 0,
+                "path": "./audio-files/demo/Ghetto Boys - My Minds Playin Tricks On Me.mp3",
+                "id": null,
+                "title": "My Minds Playin Tricks On Me",
+                "duration": null,
+                "bpm": null,
+                "replayGain": null,
+                "peak": null,
+                "allowStreaming": null,
+                "streamReady": null,
+                "streamStartDate": null,
+                "premiumStreamingOnly": null,
+                "trackNumber": 2,
+                "volumeNumber": null,
+                "version": null,
+                "popularity": null,
+                "copyright": "",
+                "description": null,
+                "url": null,
+                "isrc": null,
+                "editable": true,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": null,
+                    "name": "Ghetto Boys",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": null,
+                        "name": "Ghetto Boys",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": null,
+                    "title": null,
+                    "cover": null
+                }
+            },
+            "type": "track",
+            "cut": null
+        }
+    ]
+}

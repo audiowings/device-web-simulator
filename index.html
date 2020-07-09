@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Audiowings Headset Demo Sim</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./config/config.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/player.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="logo">
+            <img src="./art/audiowings-logo.png" alt="logo" style="height: 80px;">
+        </div>
+
+        <div id='media-player'>
+            <audio id='audio'></audio>
+        </div>
+
+
+        <div id="ui">
+
+            <label class="switch">
+                <input type="checkbox" id="power-button">
+                <span class="slider round" ></span>
+                <span class="tooltiptext" >Connect</span>
+            </label>
+
+            <button class="btn">
+                <i class="fas fa-step-backward"></i>
+                <span class="tooltiptext" >Previous/restart track</span>
+            </button>
+
+
+            <button class="btn" id="play-pause-button">
+                <i class="fas fa-play"></i>
+                <span class="tooltiptext" >Play/pause track</span>
+            </button>
+
+
+            <button class="btn">
+                <i class="fas fa-step-forward"></i>
+                <span class="tooltiptext" >Next track</span>
+            </button>
+
+            <button class="btn" id="eject-button">
+                <i class="fas fa-eject"></i>
+                <span class="tooltiptext" >Browse playlists</span>
+            </button>
+
+        </div>
+
+        <div id="playlist-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Length</th>
+                        <th>Provider</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody id="tracklist"></tbody>
+            </table>
+        </div>
+
+        <div id="dialog-overlay" class="modal">
+            <div id="dialog-prompt">
+                <div class="dialog-button-panel">
+                    <button id="dialog-yes-button">Yes</button>
+                    <button id="dialog-no-button">No</button>
+                </div>
+                <div id="dialog-prompt-header">
+                </div>
+                <div>
+                    <p>
+                        <span id="dialog-prompt-action"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <p id="device-info"></p>
+
+    </div>
+</body>
+
+</html>

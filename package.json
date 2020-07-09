@@ -1,0 +1,9 @@
+{
+  "name": "device-web-simulator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:server" : "node ../dms-nodejs-server-demo/dms-server-demo"
+  }
+}

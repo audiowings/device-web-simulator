@@ -1,0 +1,148 @@
+{
+  "href": "https://api.spotify.com/v1/users/sxpicmeg7a1v2g6pe4gef0xhe/playlists?offset=0&limit=20",
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0GGWjVHDUhjjkOXkwpu7JP"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0GGWjVHDUhjjkOXkwpu7JP",
+      "id": "0GGWjVHDUhjjkOXkwpu7JP",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27336f25ed3134b78ca8d6874a7ab67616d0000b2734ccc03169b086af698178a99ab67616d0000b27355375ff19ae4e7ab60da3cacab67616d0000b273d6407283bdd0b3189133a9cc",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27336f25ed3134b78ca8d6874a7ab67616d0000b2734ccc03169b086af698178a99ab67616d0000b27355375ff19ae4e7ab60da3cacab67616d0000b273d6407283bdd0b3189133a9cc",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27336f25ed3134b78ca8d6874a7ab67616d0000b2734ccc03169b086af698178a99ab67616d0000b27355375ff19ae4e7ab60da3cacab67616d0000b273d6407283bdd0b3189133a9cc",
+          "width": 60
+        }
+      ],
+      "name": "AfroBeats",
+      "owner": {
+        "display_name": "Awings",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/sxpicmeg7a1v2g6pe4gef0xhe"
+        },
+        "href": "https://api.spotify.com/v1/users/sxpicmeg7a1v2g6pe4gef0xhe",
+        "id": "sxpicmeg7a1v2g6pe4gef0xhe",
+        "type": "user",
+        "uri": "spotify:user:sxpicmeg7a1v2g6pe4gef0xhe"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OCxmNzRhMTE5NWQ1OTJjZTQyMjk4ZjEyODhhZDE3OTc1YThkZGU3NmQ1",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0GGWjVHDUhjjkOXkwpu7JP/tracks",
+        "total": 7
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0GGWjVHDUhjjkOXkwpu7JP"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1s7fYw8sJSZagdHpKfxcE4"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1s7fYw8sJSZagdHpKfxcE4",
+      "id": "1s7fYw8sJSZagdHpKfxcE4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27332f842df5bf97184ea909ab2ab67616d0000b2737b6982c07a75afcf309cb1daab67616d0000b2739494fd00546dc8622d962a73ab67616d0000b273a7ad64a69a42647de9dd0dad",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27332f842df5bf97184ea909ab2ab67616d0000b2737b6982c07a75afcf309cb1daab67616d0000b2739494fd00546dc8622d962a73ab67616d0000b273a7ad64a69a42647de9dd0dad",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27332f842df5bf97184ea909ab2ab67616d0000b2737b6982c07a75afcf309cb1daab67616d0000b2739494fd00546dc8622d962a73ab67616d0000b273a7ad64a69a42647de9dd0dad",
+          "width": 60
+        }
+      ],
+      "name": "Hits from the past ",
+      "owner": {
+        "display_name": "Awings",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/sxpicmeg7a1v2g6pe4gef0xhe"
+        },
+        "href": "https://api.spotify.com/v1/users/sxpicmeg7a1v2g6pe4gef0xhe",
+        "id": "sxpicmeg7a1v2g6pe4gef0xhe",
+        "type": "user",
+        "uri": "spotify:user:sxpicmeg7a1v2g6pe4gef0xhe"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTEsMmJhYjU5NDNlZDRmNzExNWY2YWExZDkzNzJjMTg5ZDlhZWYyN2M1MQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1s7fYw8sJSZagdHpKfxcE4/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1s7fYw8sJSZagdHpKfxcE4"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4UfiphjVWr3u3Amv0e8Cnk"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4UfiphjVWr3u3Amv0e8Cnk",
+      "id": "4UfiphjVWr3u3Amv0e8Cnk",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2731bb21d27effb96a1d0fe8d6dab67616d0000b2733c23198a658bd9313295d243ab67616d0000b273463de2351439f6532ff0dfbdab67616d0000b273d0593178c6c2594693ee34b7",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2731bb21d27effb96a1d0fe8d6dab67616d0000b2733c23198a658bd9313295d243ab67616d0000b273463de2351439f6532ff0dfbdab67616d0000b273d0593178c6c2594693ee34b7",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2731bb21d27effb96a1d0fe8d6dab67616d0000b2733c23198a658bd9313295d243ab67616d0000b273463de2351439f6532ff0dfbdab67616d0000b273d0593178c6c2594693ee34b7",
+          "width": 60
+        }
+      ],
+      "name": "MJ",
+      "owner": {
+        "display_name": "Awings",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/sxpicmeg7a1v2g6pe4gef0xhe"
+        },
+        "href": "https://api.spotify.com/v1/users/sxpicmeg7a1v2g6pe4gef0xhe",
+        "id": "sxpicmeg7a1v2g6pe4gef0xhe",
+        "type": "user",
+        "uri": "spotify:user:sxpicmeg7a1v2g6pe4gef0xhe"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NyxiMTEzYzAxYTA4OTA2MDQ2NjcxMWY4NGEzZGIwZDIyNGQwYTlhZTZl",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4UfiphjVWr3u3Amv0e8Cnk/tracks",
+        "total": 6
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4UfiphjVWr3u3Amv0e8Cnk"
+    }
+  ],
+  "limit": 20,
+  "next": null,
+  "offset": 0,
+  "previous": null,
+  "total": 3
+}

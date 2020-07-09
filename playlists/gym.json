@@ -1,0 +1,369 @@
+{
+    "limit": 99,
+    "offset": 0,
+    "totalNumberOfItems": 8,
+    "items": [
+        {
+            "item": {
+                "id": 57317923,
+                "title": "Fade",
+                "duration": 193,
+                "replayGain": -12.9,
+                "peak": 0.999969,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2016-06-14T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 19,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 87,
+                "copyright": "(P) 2016 Getting Out Our Dreams II, LLC",
+                "description": null,
+                "url": "http://www.tidal.com/track/57317923",
+                "isrc": "USUM71605435",
+                "editable": false,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 25022,
+                    "name": "Kanye West",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 25022,
+                        "name": "Kanye West",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 57273408,
+                    "title": "The Life Of Pablo",
+                    "releaseDate": "2016-02-13",
+                    "cover": "114d07f0-0070-4a98-b7e8-0b4f77ce47cd"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 38264827,
+                "title": "I'm a Boss (feat. Rick Ross)",
+                "duration": 245,
+                "replayGain": -13.02,
+                "peak": 1,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2014-11-25T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 7,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 56,
+                "copyright": "2014 Grey Stone Ent.",
+                "description": null,
+                "url": "http://www.tidal.com/track/38264827",
+                "isrc": "USCRP2104857",
+                "editable": true,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 3966408,
+                    "name": "Meek Mill",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 3966408,
+                        "name": "Meek Mill",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 38264820,
+                    "title": "Dreamchasers",
+                    "releaseDate": "2014-11-25",
+                    "cover": "db49f1a6-5487-4c8a-a198-fce6a4066b3e"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 41295827,
+                "title": "Energy",
+                "duration": 182,
+                "replayGain": -10.65,
+                "peak": 0.989868,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2018-02-01T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 2,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 81,
+                "copyright": "℗ 2015 Cash Money Records Inc.",
+                "description": null,
+                "url": "http://www.tidal.com/track/41295827",
+                "isrc": "USCM51500012",
+                "editable": false,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 3632070,
+                    "name": "Drake",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 3632070,
+                        "name": "Drake",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 41295825,
+                    "title": "If You're Reading This It's Too Late",
+                    "releaseDate": "2015-02-12",
+                    "cover": "74bf3a67-fc3a-4484-9a09-72c0c3bc8099"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 66421438,
+                "title": "Shutdown",
+                "duration": 188,
+                "replayGain": -11.23,
+                "peak": 0.966064,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2016-11-15T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 9,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 75,
+                "copyright": "2016 Boy Better Know",
+                "description": null,
+                "url": "http://www.tidal.com/track/66421438",
+                "isrc": "GB7QY1500024",
+                "editable": true,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 3566984,
+                    "name": "Skepta",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 3566984,
+                        "name": "Skepta",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 66421429,
+                    "title": "Konnichiwa",
+                    "releaseDate": "2016-05-06",
+                    "cover": "2ee835d3-9edf-46ee-af70-1a252b41fa56"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 59727868,
+                "title": "FORMATION",
+                "duration": 206,
+                "replayGain": -9.07,
+                "peak": 1,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2016-04-23T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 12,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 94,
+                "copyright": "(C) Parkwood Entertainment",
+                "description": null,
+                "url": "http://www.tidal.com/track/59727868",
+                "isrc": "USSM11603186",
+                "editable": false,
+                "explicit": true,
+                "audioQuality": "HI_RES",
+                "artist": {
+                    "id": 1566,
+                    "name": "Beyoncé",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 1566,
+                        "name": "Beyoncé",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 59727856,
+                    "title": "LEMONADE",
+                    "releaseDate": "2016-04-23",
+                    "cover": "717dfdae-beb0-4aea-a553-a70064c30386"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 34354542,
+                "title": "Rhythm & Gash (Sir Spyro Remix)",
+                "duration": 233,
+                "replayGain": -11.5,
+                "peak": 0.98883,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2014-09-21T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 11,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 34,
+                "copyright": "2014 Sir Spyro",
+                "description": null,
+                "url": "http://www.tidal.com/track/34354542",
+                "isrc": "GBDLM1400569",
+                "editable": false,
+                "explicit": false,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 5996203,
+                    "name": "Rebound X",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 5996203,
+                        "name": "Rebound X",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 34354531,
+                    "title": "Pure Grime - The Very Best of Grime",
+                    "releaseDate": "2014-09-19",
+                    "cover": "403e4e41-4987-47e6-84e2-7b28480d8b4a"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 67784549,
+                "title": "Surfin'",
+                "duration": 375,
+                "replayGain": -11.29,
+                "peak": 0.999969,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2018-01-04T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 19,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 59,
+                "copyright": "℗ 2016 Republic Records, a division of UMG Recordings, Inc.",
+                "description": null,
+                "url": "http://www.tidal.com/track/67784549",
+                "isrc": "USUM71614716",
+                "editable": false,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 3603175,
+                    "name": "Kid Cudi",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 3603175,
+                        "name": "Kid Cudi",
+                        "type": "MAIN"
+                    },
+                    {
+                        "id": 4900204,
+                        "name": "Pharrell Williams",
+                        "type": "FEATURED"
+                    }
+                ],
+                "album": {
+                    "id": 67784530,
+                    "title": "Passion, Pain & Demon Slayin'",
+                    "releaseDate": "2016-12-02",
+                    "cover": "a660376f-4fba-400a-9f8b-da00f7cab11e"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "id": 66410655,
+                "title": "Man Don't Care",
+                "duration": 213,
+                "replayGain": -12.04,
+                "peak": 0.999634,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2016-11-15T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 13,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 78,
+                "copyright": "2015 Boy Better Know",
+                "description": null,
+                "url": "http://www.tidal.com/track/66410655",
+                "isrc": "GBSYA1500113",
+                "editable": true,
+                "explicit": false,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 3538221,
+                    "name": "JME",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 3538221,
+                        "name": "JME",
+                        "type": "MAIN"
+                    },
+                    {
+                        "id": 3568472,
+                        "name": "Giggs",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 66410642,
+                    "title": "Integrity>",
+                    "releaseDate": "2015-05-04",
+                    "cover": "2030fe6a-dc11-4360-968a-87d8db9b4b2e"
+                }
+            },
+            "type": "track",
+            "cut": null
+        }
+    ]
+}

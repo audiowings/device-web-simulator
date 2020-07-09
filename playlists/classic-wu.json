@@ -1,0 +1,100 @@
+{
+    "playlistId": 1,
+    "playlistName": "Demo Hip Hop",
+    "providerId": 1,
+    "totalNumberOfItems": 35,
+    "items": [
+        {
+            "item": {
+                "providerId": 1,
+                "providerName": "tidal",
+                "path": "/public/audio-files/tidal/",
+                "id": 79445074,
+                "title": "Wu-Tang The Saga Continues Intro (feat. RZA)",
+                "duration": 91,
+                "replayGain": -10.97,
+                "peak": 0.988434,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2017-10-13T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 1,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 53,
+                "copyright": "36 Chambers, LLC & Entertainment One U.S., LP",
+                "description": null,
+                "url": "http://www.tidal.com/track/79445074",
+                "isrc": "USKO11700875",
+                "editable": true,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 4295,
+                    "name": "Wu-Tang Clan",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 4295,
+                        "name": "Wu-Tang Clan",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 79445073,
+                    "title": "The Saga Continues",
+                    "cover": "9774b041-7a20-4d1f-ad63-21547f1b0eee"
+                }
+            },
+            "type": "track",
+            "cut": null
+        },
+        {
+            "item": {
+                "providerId": 1,
+                "providerName": "tidal",
+                "path": "/public/audio-files/tidal/",
+                "id": 79445075,
+                "title": "Lesson Learn'd (feat. Inspectah Deck and Redman)",
+                "duration": 202,
+                "replayGain": -10.97,
+                "peak": 0.988434,
+                "allowStreaming": true,
+                "streamReady": true,
+                "streamStartDate": "2017-10-13T00:00:00.000+0000",
+                "premiumStreamingOnly": false,
+                "trackNumber": 2,
+                "volumeNumber": 1,
+                "version": null,
+                "popularity": 59,
+                "copyright": "36 Chambers, LLC & Entertainment One U.S., LP",
+                "description": null,
+                "url": "http://www.tidal.com/track/79445075",
+                "isrc": "USKO11700876",
+                "editable": true,
+                "explicit": true,
+                "audioQuality": "LOSSLESS",
+                "artist": {
+                    "id": 4295,
+                    "name": "Wu-Tang Clan",
+                    "type": "MAIN"
+                },
+                "artists": [
+                    {
+                        "id": 4295,
+                        "name": "Wu-Tang Clan",
+                        "type": "MAIN"
+                    }
+                ],
+                "album": {
+                    "id": 79445073,
+                    "title": "The Saga Continues",
+                    "cover": "9774b041-7a20-4d1f-ad63-21547f1b0eee"
+                }
+            },
+            "type": "track",
+            "cut": null
+        }
+    ]
+}

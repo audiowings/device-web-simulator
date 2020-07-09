@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name" : "Gym",
+            "path": "/playlists/gym.json"
+        },
+        {
+            "id": 2,
+            "name": "Old School Hip-Hop",
+            "path": "/playlists/old-school-hiphop.json"
+        },
+        {
+            "id": 3,
+            "name": "Classic Wu-Tang Clan",
+            "path": "/playlists/classic-wu.json"
+        }
+
+    ]
+}
