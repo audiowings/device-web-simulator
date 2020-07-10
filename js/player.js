@@ -22,7 +22,6 @@ A few notes
 --- Once a playlist is selected, the list and the audio files will be downloaded to the device and played
 */
 
-
 const PROXY_SERVER = location.hostname + ':3000';
 const MAC_ADDRESS = "FF-01-25-79-C7-EC";
 const DEVICE_CONF_FILE = '/config/config.json';
@@ -75,10 +74,14 @@ let connectButton;
 let playPauseButton;
 let pauseButton;
 let ejectButton;
+let nextButton
+let previousButton
 
 let mouseDownTime;
 
-let currentTracklist;
+let trackListContainer;
+let tracks
+let currentTrackIndex = 0
 
 let dialogPromptHeader;
 let dialogPromptAction;
@@ -92,17 +95,6 @@ function status(response) {
     } else {
         return Promise.reject(new Error(response.statusText));
     }
-}
-
-
-async function getHardwareId() {
-    let deviceInfo = await getJsonFromFile(DEVICE_CONF_FILE);
-    return deviceInfo['hardwareId'];
-}
-
-async function isDeviceActivated() {
-    let deviceInfo = await getJsonFromFile(DEVICE_CONF_FILE);
-    return deviceInfo['activated'] === 1;
 }
 
 
@@ -148,34 +140,15 @@ function dragElement(elmnt) {
     }
 }
 
-function getPlaylistPath(playlistId) {
-    //Get playlist index JSON
-    return getJsonFromFile(LOCAL_PLAYLISTS)
-        .then((playlistIndexJson) => {
-            let playlists = playlistIndexJson.playlists;
-            for (i in playlists) {
-                //  console.log('Playlist Path = ', playlistIndexJson.playlists[i].path);
-                if (playlists[i].id === playlistId) {
-                    return playlists[i].path;
-                }
-            }
-        }).catch(error => console.log(error));
-}
-
-function getPlaylistJson(playlistId) {
-    return getPlaylistPath(playlistId)
-        .then(playlistPath => getJsonFromFile(playlistPath));
-}
-
 // getPlaylistJson(2).then(playlistJson => console.log(playlistJson))
 function formatMSS(s) {
     return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s
 }
 
-function displayPlaylist(playlistData) {
+function displayPlaylist(tracks) {
 
-    tracklist.innerHTML = "";
-    playlistData.items.forEach((track, index) => {
+    trackListContainer.innerHTML = "";
+    tracks.forEach((track, index) => {
         let trPlaylistItem = document.createElement("tr");
 
         let tdTrackNo = document.createElement("td");
@@ -205,9 +178,11 @@ function displayPlaylist(playlistData) {
         trPlaylistItem.appendChild(tdProvider);
         trPlaylistItem.appendChild(tdSource);
 
-        tracklist.appendChild(trPlaylistItem);
+        trackListContainer.appendChild(trPlaylistItem);
+
+
     })
-    audio.innerHTML = `<source src='${playlistData.items[0].item.path}' type='audio/mp3'>`;
+    audio.innerHTML = `<source src='${tracks[0].item.path}' type='audio/mp3'>`;
 
 }
 
@@ -263,6 +238,7 @@ function showDialogPrompt(topic) {
     let promptOptionText;
     let optionsLength;
     let playlists;
+    let activePlaylist
 
     confBoxOverlay.style.display = "block";
     dialogPromptHeader.innerText = promptHeaderText;
@@ -286,17 +262,13 @@ function showDialogPrompt(topic) {
         confBoxOverlay.style.display = "none";
         switch (topic) {
             case topicEnum.PLAYLIST: {
-                let playlistId = playlists.items[optionIndex].playlistId;
-                let playlistPath = playlists.items[optionIndex].path;
-                let playlistName = playlists.items[optionIndex].name;
-                // let providerId = playlists.items[optionIndex].providerId;
-                connectButton.checked ? getProviderPlaylist('tidal', playlistId) : getLocalPlaylist(playlistPath)
+                activePlaylist = playlists.items[optionIndex]
+                connectButton.checked ? getProviderPlaylist(activePlaylist.providerId, activePlaylist.playlistId) : getLocalPlaylist(activePlaylist.path)
                     .then(playlistData => {
                         console.log('Playlist Data... ', playlistData);
-                        displayPlaylist(playlistData)
-
+                        tracks = playlistData.items
+                        displayPlaylist(tracks)
                     });
-
                 break;
             }
             case topicEnum.GENRE: {
@@ -406,8 +378,10 @@ $(document).ready(() => {
     logo = document.getElementById("logo");
     connectButton = document.getElementById("power-button");
     playPauseButton = document.getElementById("play-pause-button");
+    nextButton = document.getElementById("next-button");
+    previousButton = document.getElementById("previous-button");
     ejectButton = document.getElementById("eject-button");
-    tracklist = document.getElementById("tracklist");
+    trackListContainer = document.getElementById("tracklist");
 
     ejectButton.addEventListener("mousedown", mouseDownAction);
     ejectButton.addEventListener("mouseup", mouseUpAction);
@@ -437,10 +411,10 @@ $(document).ready(() => {
     playPauseButton.onclick = (() => {
         if (audio.readyState > 3) {
             if (audio.paused) {
-                playAudio(0);
+                playAudio(0)
             } else {
-                audio.pause();
-                playPauseButton.innerHTML = '<i class="fas fa-play"></i>';
+                audio.pause()
+                playPauseButton.innerHTML = '<i class="fas fa-play"></i>'
             }
         }
     });
@@ -449,8 +423,26 @@ $(document).ready(() => {
         audio.currentTime = 0;
     }
 
+    nextButton.onclick = (() => {
+        currentTrackIndex = (currentTrackIndex + 1 < tracks.length) ? currentTrackIndex + 1 : 0
+        audio.setAttribute("src", tracks[currentTrackIndex].item.path);
+        audio.load();
+        playAudio(0)
+    })
+
+    previousButton.onclick = (() => {
+        currentTrackIndex = (currentTrackIndex > 0) ? currentTrackIndex - 1 : 0
+        audio.setAttribute("src", tracks[currentTrackIndex].item.path);
+        audio.load();
+        playAudio(0)
+    })
+
+
+
     // var providerUrl = PROXY_SERVER + "?provider=tidal";
 
     displayDeviceInfo(deviceConnected);
 
 });
+
+

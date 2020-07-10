@@ -455,3 +455,6 @@ var audioPlayer = function() {
   
 	player.initPlayer();
   })();
+  
+  
+  export {audioPlayer }

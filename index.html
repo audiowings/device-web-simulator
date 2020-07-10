@@ -8,7 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="./config/config.json"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/player.js"></script>
+    <script type="module" src="./js/player.js"></script>
 </head>
 
 <body>
@@ -30,19 +30,17 @@
                 <span class="tooltiptext" >Connect</span>
             </label>
 
-            <button class="btn">
+            <button class="btn" id="previous-button">
                 <i class="fas fa-step-backward"></i>
                 <span class="tooltiptext" >Previous/restart track</span>
             </button>
 
-
-            <button class="btn" id="play-pause-button">
+            <button class="btn large-play-btn large-toggle-btn" id="play-pause-button">
                 <i class="fas fa-play"></i>
                 <span class="tooltiptext" >Play/pause track</span>
             </button>
 
-
-            <button class="btn">
+            <button class="btn" id="next-button">
                 <i class="fas fa-step-forward"></i>
                 <span class="tooltiptext" >Next track</span>
             </button>
@@ -53,6 +51,15 @@
             </button>
 
         </div>
+
+        <div class="progress-box">
+            <div class="progress-cell">
+              <div class="progress">
+                <div class="progress-buffer"></div>
+                <div class="progress-indicator" style="left: 12px;"></div>
+              </div>
+            </div>
+          </div>
 
         <div id="playlist-wrap">
             <table>

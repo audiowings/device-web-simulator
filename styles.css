@@ -252,3 +252,38 @@ input:checked + .slider:before {
 #ui > *:hover .tooltiptext {
   visibility: visible;
 }
+
+/*Progress bar */
+body .container .player .progress-box {
+  float: left;
+  min-width: 250px;
+  position: relative;
+}
+body .container .player .progress-box .progress-cell {
+  height: 12px;
+  position: relative;
+}
+body .container .player .progress-box .progress-cell .progress {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  height: 8px;
+  position: relative;
+  width: auto;
+}
+body .container .player .progress-box .progress-cell .progress .progress-buffer {
+  background: #337ab7;
+  height: 100%;
+  width: 0;
+}
+body .container .player .progress-box .progress-cell .progress .progress-indicator {
+  background: #fff;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 10px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -2px;
+  width: 22px;
+}
