@@ -24,8 +24,8 @@ A few notes
 
 const PROXY_SERVER = location.hostname + ':3000';
 const MAC_ADDRESS = "FF-01-25-79-C7-EC";
-const DEVICE_CONF_FILE = '/config/config.json';
-const LOCAL_PLAYLISTS = '/playlists/basic-playlists.json';
+const DEVICE_CONF_FILE = './config/config.json';
+const LOCAL_PLAYLISTS = './playlists/basic-playlists.json';
 const PROVIDERS = ["AudioWings", "Tidal", "Spotify"];
 const GENRES = ["Hip Hop / Rap", "R&B / Soul", "Pop", "Rock", "Alternative", "Reggae"];
 const SELECT_PROMPT_HEADER = 'Answer "Yes" or "No"';
@@ -195,19 +195,6 @@ function sleep(milliseconds) {
     }
 }
 
-
-
-// Get a playlist from content provider via DMS
-function getPlaylist(provider, playlistId) {
-    let playlistRequest = new Request(`http://${PROXY_SERVER}/playlist/?playlistId=${playlistId}`);
-    let headers = playlistRequest.headers;
-    headers.append('X-Audiowings-DeviceId', MAC_ADDRESS);
-    return fetch(playlistRequest)
-        .then(status)
-        .then(response => response.json())
-        .catch(error => console.log(':( Request failed', error));
-}
-
 async function getLocalPlaylist(path) {
     return await getJsonFromFile(path)
 }
@@ -227,9 +214,6 @@ async function getLocalPlaylists() {
     return await getJsonFromFile(LOCAL_PLAYLISTS)
 }
 
-function getPlaylists(provider) {
-    provider ? getProviderPlaylists() : getLocalPlaylists()
-}
 
 function showDialogPrompt(topic) {
     let optionIndex = 0;
@@ -419,9 +403,9 @@ $(document).ready(() => {
         }
     });
 
-    playPauseButton.ondblclick = () => {
+    playPauseButton.ondblclick = (() => {
         audio.currentTime = 0;
-    }
+    })
 
     nextButton.onclick = (() => {
         currentTrackIndex = (currentTrackIndex + 1 < tracks.length) ? currentTrackIndex + 1 : 0
